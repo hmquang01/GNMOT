@@ -1,5 +1,5 @@
 #mot_dataset_dir = '/media/codinglee/DATA/Ubuntu16.04/Desktop/MOT/'
-mot_dataset_dir = '../MOT/'
+mot_dataset_dir = 'kaggle/input/mot16-mot17/'
 
 model_dir = 'model/'
 
