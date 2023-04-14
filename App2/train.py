@@ -30,7 +30,7 @@ class GN():
         # all the tensor should set the 'volatile' as True, and False when update the network
         self.hungarian = Munkres()
         self.device = torch.device("cuda" if cuda else "cpu")
-        self.nEpochs = 999
+        self.nEpochs = 150
         self.lr = lr
         self.batchsize = batchs
         self.numWorker = 4
