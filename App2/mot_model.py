@@ -23,7 +23,7 @@ class uphi(nn.Module):
         super(uphi, self).__init__()
         self.features = nn.Sequential(
             nn.Linear(u_num + v_num + e_num, 256),
-            nn.LeakyReLU(inplace=True),
+            nn.LeakyReLU(inplace=False),
             nn.Linear(256, u_num),
         )
 
@@ -52,7 +52,7 @@ class ephi(nn.Module):
         super(ephi, self).__init__()
         self.features = nn.Sequential(
             nn.Linear(u_num + v_num * 2 + e_num, 256),
-            nn.LeakyReLU(inplace=True),
+            nn.LeakyReLU(inplace=False),
             nn.Linear(256, e_num),
         )
 
@@ -83,7 +83,7 @@ class vphi(nn.Module):
         super(vphi, self).__init__()
         self.features = nn.Sequential(
             nn.Linear(u_num + v_num * 2 + e_num, 256),
-            nn.LeakyReLU(inplace=True),
+            nn.LeakyReLU(inplace=False),
             nn.Linear(256, v_num),
         )
 
